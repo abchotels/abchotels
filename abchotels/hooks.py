@@ -22,18 +22,11 @@ website_route_rules = [
 ]
 
 fixtures = [
-    "Bed Type",
-    "Property",
-    "Room Category",
-    "Room Type",
-    "Room Type Room",
-    "Room Type Room Bed",
-    # the main workspace doc(s)
-    {"doctype": "Workspace", "filters": [["module", "in", ["ABC Hotels"]]]},
-    # children / related items shown on the workspace
-    {"doctype": "Workspace Link", "filters": [["parent", "in", ["ABC Hotels"]]]},
-    {"doctype": "Workspace Shortcut", "filters": [["parent", "in", ["ABC Hotels"]]]},
-    {"doctype": "Workspace Permission", "filters": [["parent", "in", ["ABC Hotels"]]]},
-    # include cards if you used them
-    {"doctype": "Number Card", "filters": [["module", "in", ["ABC Hotels"]]]},
+    {"doctype": "Property"},
+    {"doctype": "Amenity"},
+    {"doctype": "Room Type"},
+    {"doctype": "Bed Type"},
+    {"doctype": "Room Type Room"},
+    {"doctype": "Room Category"},
+    {"doctype": "Workspace", "filters": [["module", "=", "ABC Hotels"]]},
 ]
