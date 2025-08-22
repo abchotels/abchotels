@@ -20,13 +20,110 @@ website_include_js = ["/assets/abchotels/js/website.js"]
 website_route_rules = [
     {"from_route": "/abchotels/<path:app_path>", "to_route": "abchotels"}
 ]
+# Install / migrate hooks
+after_install = "abchotels.setup.installer.after_install"
+after_migrate = "abchotels.setup.installer.after_migrate"
+
 
 fixtures = [
-    {"doctype": "Property"},
-    {"doctype": "Amenity"},
-    {"doctype": "Room Type"},
-    {"doctype": "Bed Type"},
-    {"doctype": "Room Type Room"},
-    {"doctype": "Room Category"},
-    {"doctype": "Workspace", "filters": [["module", "=", "ABC Hotels"]]},
+	{
+		"doctype": "Room Type"
+	},
+	{
+		"doctype": "Cancelation Policy"
+	},
+	{
+		"doctype": "Rate Code"
+	},
+	{
+		"doctype": "Room Type Inventory"
+	},
+	{
+		"doctype": "Property"
+	},
+	{
+		"doctype": "Room Type Room"
+	},
+	{
+		"doctype": "Amenity"
+	},
+	{
+		"doctype": "Room Category"
+	},
+	{
+		"doctype": "Bed Type"
+	},
+	{
+        "doctype": "Role",
+        "filters": [
+            ["role_name", "in", [
+                "Reservation Agent",
+                "Reservation Manager",
+                "Front Desk",
+                "Accountant",
+                "Inventory Engine",
+                "Night Auditor",
+                "Revenue Manager",
+                "Housekeeping",
+                "Housekeeping Supervisor",
+                "Maintenance",
+                "POS Cashier",
+                "POS Supervisor",
+                "Restaurant Manager",
+                "Property Manager (GM)",
+                "Device Service",
+                "API Integration",
+            ]]
+        ],
+    },
+
+    # Custom DocPerm for core doctypes you touched
+    {"doctype": "Custom DocPerm", "filters": [["parent", "in", [
+                "Reservation Agent",
+                "Reservation Manager",
+                "Front Desk",
+                "Accountant",
+                "Inventory Engine",
+                "Night Auditor",
+                "Revenue Manager",
+                "Housekeeping",
+                "Housekeeping Supervisor",
+                "Maintenance",
+                "POS Cashier",
+                "POS Supervisor",
+                "Restaurant Manager",
+                "Property Manager (GM)",
+                "Device Service",
+                "API Integration",
+    ]]]},
+
+    # Optional: grant page/report access as fixtures
+    {"doctype": "Role Permission for Page and Report", "filters": [["role", "in", [
+                "Reservation Agent",
+                "Reservation Manager",
+                "Front Desk",
+                "Accountant",
+                "Inventory Engine",
+                "Night Auditor",
+                "Revenue Manager",
+                "Housekeeping",
+                "Housekeeping Supervisor",
+                "Maintenance",
+                "POS Cashier",
+                "POS Supervisor",
+                "Restaurant Manager",
+                "Property Manager (GM)",
+                "Device Service",
+                "API Integration",
+    ]]]},
+	{
+		"doctype": "Workspace",
+		"filters": [
+			[
+				"module",
+				"=",
+				"ABC Hotels"
+			]
+		]
+	}
 ]

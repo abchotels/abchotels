@@ -1,14 +1,12 @@
 {
- "actions": [],
- "allow_rename": 1,
-    "allow_import": 1,
-
- "autoname": "prompt",
- "creation": "2025-08-19 19:46:06.556854",
- "doctype": "DocType",
- "engine": "InnoDB",
- "field_order": [
-    "name",
+  "actions": [],
+  "allow_import": 1,
+  "allow_rename": 1,
+  "autoname": "prompt",
+  "creation": "2025-08-19 19:46:06.556854",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
     "property_name",
     "room_type_description",
     "minimum_guests_number",
@@ -17,7 +15,11 @@
     "bathrooms_count",
     "is_closed",
     "base_price",
-    "room_type_image"
+    "room_type_image",
+    "room_amenities_section",
+    "room_type_amenities",
+    "rates_section",
+    "rate_codes"
   ],
   "fields": [
     {
@@ -28,21 +30,24 @@
     {
       "fieldname": "minimum_guests_number",
       "fieldtype": "Int",
+      "in_list_view": 1,
       "label": "Minimum Guests Number",
       "reqd": 1
     },
     {
       "fieldname": "maximum_guests_number",
       "fieldtype": "Int",
+      "in_list_view": 1,
       "label": "Maximum Guests Number",
       "reqd": 1
     },
     {
       "fieldname": "unit_area",
       "fieldtype": "Float",
+      "in_list_view": 1,
       "label": "Unit Area",
-      "reqd": 1,
-      "precision": "2"
+      "precision": "2",
+      "reqd": 1
     },
     {
       "fieldname": "bathrooms_count",
@@ -51,10 +56,10 @@
       "reqd": 1
     },
     {
+      "default": "0",
       "fieldname": "is_closed",
       "fieldtype": "Check",
-      "label": "Is Closed",
-      "default": "0"
+      "label": "Is Closed"
     },
     {
       "fieldname": "base_price",
@@ -69,30 +74,43 @@
     {
       "fieldname": "property_name",
       "fieldtype": "Link",
+      "in_list_view": 1,
       "label": "Property",
       "options": "Property",
       "reqd": 1
     },
     {
-   "fieldname": "room_amenities_section",
-   "fieldtype": "Section Break",
-   "label": "Amenities"
-  },
-  {
-   "fieldname": "room_type_amenities",
-   "fieldtype": "Table",
-   "label": "Room Type Amenities",
-   "options": "Room Type Amenity"
-  }
+      "fieldname": "room_amenities_section",
+      "fieldtype": "Section Break",
+      "label": "Amenities"
+    },
+    {
+      "fieldname": "room_type_amenities",
+      "fieldtype": "Table",
+      "label": "Room Type Amenities",
+      "options": "Room Type Amenity"
+    },
+    {
+      "fieldname": "rates_section",
+      "fieldtype": "Section Break",
+      "label": "Rates"
+    },
+    {
+      "fieldname": "rate_codes",
+      "fieldtype": "Table",
+      "label": "Rate Codes",
+      "options": "Room Type Rate Code",
+      "reqd": 1
+    }
   ],
   "grid_page_length": 50,
   "index_web_pages_for_search": 1,
   "links": [],
-  "modified": "2025-08-19 19:46:16.855471",
-  "modified_by": "Administrator",
+  "modified": "2025-08-21 07:33:00.996425",
+  "modified_by": "a.darwish.dev@gmail.com",
   "module": "ABC Hotels",
   "name": "Room Type",
-  "naming_rule": "By User",
+  "naming_rule": "Set by user",
   "owner": "Administrator",
   "permissions": [
     {

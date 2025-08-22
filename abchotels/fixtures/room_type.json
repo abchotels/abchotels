@@ -7,9 +7,43 @@
   "is_closed": 0,
   "maximum_guests_number": 2,
   "minimum_guests_number": 1,
-  "modified": "2025-08-20 03:10:50.885165",
+  "modified": "2025-08-21 18:46:43.531532",
   "name": "Premium Bungalows King",
   "property_name": "Concha Hotel",
+  "rate_codes": [
+   {
+    "is_related_price_percent": 0,
+    "parent": "Premium Bungalows King",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "First Night Fee",
+    "related_price_value": 0.0
+   },
+   {
+    "is_related_price_percent": 0,
+    "parent": "Premium Bungalows King",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "Free Cancellation",
+    "related_price_value": 0.0
+   },
+   {
+    "is_related_price_percent": 0,
+    "parent": "Premium Bungalows King",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "Full Stay Fee",
+    "related_price_value": 0.0
+   },
+   {
+    "is_related_price_percent": 0,
+    "parent": "Premium Bungalows King",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "Non-refundable",
+    "related_price_value": 0.0
+   }
+  ],
   "room_type_amenities": [],
   "room_type_description": null,
   "room_type_image": null,
@@ -23,9 +57,43 @@
   "is_closed": 0,
   "maximum_guests_number": 2,
   "minimum_guests_number": 1,
-  "modified": "2025-08-20 03:10:14.787907",
+  "modified": "2025-08-21 18:48:09.224446",
   "name": "Superior Bungalows King",
   "property_name": "Concha Hotel",
+  "rate_codes": [
+   {
+    "is_related_price_percent": 0,
+    "parent": "Superior Bungalows King",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "First Night Fee",
+    "related_price_value": 0.0
+   },
+   {
+    "is_related_price_percent": 0,
+    "parent": "Superior Bungalows King",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "Free Cancellation",
+    "related_price_value": 0.0
+   },
+   {
+    "is_related_price_percent": 0,
+    "parent": "Superior Bungalows King",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "Full Stay Fee",
+    "related_price_value": 0.0
+   },
+   {
+    "is_related_price_percent": 0,
+    "parent": "Superior Bungalows King",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "Non-refundable",
+    "related_price_value": 0.0
+   }
+  ],
   "room_type_amenities": [],
   "room_type_description": null,
   "room_type_image": null,
@@ -39,9 +107,43 @@
   "is_closed": 0,
   "maximum_guests_number": 2,
   "minimum_guests_number": 2,
-  "modified": "2025-08-20 03:09:50.849745",
+  "modified": "2025-08-21 18:48:38.172134",
   "name": "Superior Bungalows Twin",
   "property_name": "Concha Hotel",
+  "rate_codes": [
+   {
+    "is_related_price_percent": 0,
+    "parent": "Superior Bungalows Twin",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "First Night Fee",
+    "related_price_value": 0.0
+   },
+   {
+    "is_related_price_percent": 0,
+    "parent": "Superior Bungalows Twin",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "Free Cancellation",
+    "related_price_value": 0.0
+   },
+   {
+    "is_related_price_percent": 0,
+    "parent": "Superior Bungalows Twin",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "Full Stay Fee",
+    "related_price_value": 0.0
+   },
+   {
+    "is_related_price_percent": 0,
+    "parent": "Superior Bungalows Twin",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "Non-refundable",
+    "related_price_value": 0.0
+   }
+  ],
   "room_type_amenities": [],
   "room_type_description": null,
   "room_type_image": null,
@@ -55,9 +157,43 @@
   "is_closed": 0,
   "maximum_guests_number": 2,
   "minimum_guests_number": 1,
-  "modified": "2025-08-20 03:10:31.563625",
+  "modified": "2025-08-21 18:47:39.142849",
   "name": "Standard Bungalows Twin",
   "property_name": "Concha Hotel",
+  "rate_codes": [
+   {
+    "is_related_price_percent": 0,
+    "parent": "Standard Bungalows Twin",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "First Night Fee",
+    "related_price_value": 0.0
+   },
+   {
+    "is_related_price_percent": 0,
+    "parent": "Standard Bungalows Twin",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "Free Cancellation",
+    "related_price_value": 0.0
+   },
+   {
+    "is_related_price_percent": 0,
+    "parent": "Standard Bungalows Twin",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "Full Stay Fee",
+    "related_price_value": 0.0
+   },
+   {
+    "is_related_price_percent": 0,
+    "parent": "Standard Bungalows Twin",
+    "parentfield": "rate_codes",
+    "parenttype": "Room Type",
+    "rate_code": "Non-refundable",
+    "related_price_value": 0.0
+   }
+  ],
   "room_type_amenities": [],
   "room_type_description": null,
   "room_type_image": null,

@@ -1,0 +1,140 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "allow_import": 1,
+  "autoname": "prompt",
+  "creation": "2025-08-21 06:49:52.478695",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "rate_code_information_section",
+    "abbriviation",
+    "related_price_percent",
+    "days_before_check_in",
+    "color",
+    "column_break_hqvm",
+    "cacnelation_policy",
+    "column_break_kxcc",
+    "pay_in_advance",
+    "is_increasing_price",
+    "flexible_to_ammend",
+    "breakfast_included",
+    "dinner_included_copy",
+    "launc_included_copy_copy",
+    "is_related_price"
+  ],
+  "fields": [
+    {
+      "fieldname": "rate_code_information_section",
+      "fieldtype": "Section Break",
+      "label": "Rate Code Information"
+    },
+    {
+      "fieldname": "abbriviation",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Abbriviation",
+      "length": 4,
+      "reqd": 1
+    },
+    {
+      "fieldname": "related_price_percent",
+      "fieldtype": "Percent",
+      "label": "Related Price Percent"
+    },
+    {
+      "fieldname": "days_before_check_in",
+      "fieldtype": "Int",
+      "label": "Days Before Check In"
+    },
+    {
+      "fieldname": "color",
+      "fieldtype": "Color",
+      "label": "Color"
+    },
+    {
+      "fieldname": "column_break_hqvm",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "cacnelation_policy",
+      "fieldtype": "Link",
+      "label": "Cacnelation Policy",
+      "options": "Cancelation Policy",
+      "reqd": 1
+    },
+    {
+      "fieldname": "column_break_kxcc",
+      "fieldtype": "Column Break"
+    },
+    {
+      "default": "0",
+      "fieldname": "pay_in_advance",
+      "fieldtype": "Check",
+      "label": "Pay In Advance"
+    },
+    {
+      "default": "0",
+      "fieldname": "is_increasing_price",
+      "fieldtype": "Check",
+      "label": "Is Increasing Price"
+    },
+    {
+      "default": "0",
+      "fieldname": "flexible_to_ammend",
+      "fieldtype": "Check",
+      "label": "Flexible To Ammend"
+    },
+    {
+      "default": "0",
+      "fieldname": "breakfast_included",
+      "fieldtype": "Check",
+      "label": "Breakfast Included"
+    },
+    {
+      "default": "0",
+      "fieldname": "dinner_included_copy",
+      "fieldtype": "Check",
+      "label": "Dinner Included Copy"
+    },
+    {
+      "default": "0",
+      "fieldname": "launc_included_copy_copy",
+      "fieldtype": "Check",
+      "label": "Launc Included Copy Copy"
+    },
+    {
+      "default": "0",
+      "fieldname": "is_related_price",
+      "fieldtype": "Check",
+      "label": "Is Related Price"
+    }
+  ],
+  "grid_page_length": 50,
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2025-08-21 07:58:22.250572",
+  "modified_by": "Administrator",
+  "module": "ABC Hotels",
+  "name": "Rate Code",
+  "naming_rule": "Set by user",
+  "owner": "a.darwish.dev@gmail.com",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "row_format": "Dynamic",
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": []
+}
